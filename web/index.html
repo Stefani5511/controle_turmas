@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginView" class="view login-screen">
+        <div class="login-card">
+            <h1>Bem Vindo</h1>
+            <input id="email" type="text" placeholder="E-mail">
+            <input id="senha" type="password" placeholder="Senha">
+            <button onclick="login()" class="btn-primary">ENTRAR</button>
+            <p id="msg"></p>
+        </div>
+    </div>
+    <div id="professorView" class="view hidden">
+        <header class="topbar">
+            <div class="logo-area">Professor: <span id="profNome"></span></div>
+            <button class="btn-logout" onclick="logout()">Sair</button>
+        </header>
+        <main class="content">
+            <div class="page-header">
+                <h2>Turmas</h2>
+                <button onclick="mostrarCadastroTurma()" class="btn-primary">Cadastrar Turma</button>
+            </div>
+            <div id="turmas" class="listagem"></div>
+        </main>
+    </div>
+    <div id="cadastroTurmaView" class="view hidden">
+        <header class="topbar">
+            <div>Cadastro de Turma</div>
+        </header>
+        <main class="content">
+            <div class="form-card">
+                <h2>Nova Turma</h2>
+                <input id="nomeTurma" type="text" placeholder="Nome da turma">
+                <div class="form-actions">
+                    <button onclick="cadastrarTurma()" class="btn-primary">Salvar</button>
+                    <button onclick="voltarProfessor()" class="btn-secondary">Voltar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="atividadesView" class="view hidden">
+        <header class="topbar">
+            <div>Turma: <span id="turmaTitulo"></span></div>
+            <button class="btn-logout" onclick="voltarProfessor()">Voltar</button>
+        </header>
+        <main class="content">
+            <div class="page-header">
+                <h2>Atividades</h2>
+                <button onclick="mostrarCadastroAtividade()" class="btn-primary">Cadastrar Atividade</button>
+            </div>
+            <div id="atividades" class="listagem"></div>
+        </main>
+    </div>
+    <div id="cadastroAtividadeView" class="view hidden">
+        <header class="topbar">
+            <div>Cadastro de Atividade</div>
+        </header>
+        <main class="content">
+            <div class="form-card">
+                <h2>Nova Atividade</h2>
+                <input id="descricaoAtividade" type="text" placeholder="Descrição da atividade">
+                <div class="form-actions">
+                    <button onclick="cadastrarAtividade()" class="btn-primary">Salvar</button>
+                    <button onclick="voltarAtividades()" class="btn-secondary">Voltar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

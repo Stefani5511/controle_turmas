@@ -1,0 +1,63 @@
+const prisma = require("../data/prisma");
+
+const cadastrar = async (req, res) => {
+    const data = req.body;
+
+    const item = await prisma.turma.create({
+        data
+    });
+
+    res.json(item).status(201).end();
+};
+
+const listar = async (req, res) => {
+    const { professorId } = req.query;
+
+    const lista = await prisma.turma.findMany({
+        where: {
+            professorId: Number(professorId)
+        }
+    });
+
+    res.status(200).json(lista);
+};
+
+const buscar = async (req, res) => {
+    const { id } = req.params;
+    
+    const item = await prisma.turma.findUnique({
+        where: { id : Number(id) }
+    });
+
+    res.json(item).status(200).end();
+};
+
+const atualizar = async (req, res) => {
+    const { id } = req.params;
+    const dados = req.body;
+    
+    const item = await prisma.turma.update({
+        where: { id : Number(id) },
+        data: dados
+    });
+
+    res.json(item).status(200).end();
+};
+
+const excluir = async (req, res) => {
+    const { id } = req.params;
+    
+    const item = await prisma.turma.delete({
+        where: { id : Number(id) }
+    });
+
+    res.json(item).status(200).end();
+};
+
+module.exports = {
+    cadastrar,
+    listar,
+    buscar,
+    atualizar,
+    excluir
+}
