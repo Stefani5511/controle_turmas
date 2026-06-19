@@ -2,7 +2,7 @@
 
 ## Descrição do Sistema
 
-Este sistema foi desenvolvido como parte da atividade Aula 03 - Projeto Full Stack, com o objetivo de permitir o gerenciamento de turmas e atividades por professores.
+Este sistema foi desenvolvido com o objetivo de permitir o gerenciamento de turmas e atividades por professores.
 
 O sistema realiza autenticação simples de usuários (professores) e permite operações de cadastro, listagem e exclusão de turmas e atividades.
 
@@ -14,7 +14,7 @@ O sistema realiza autenticação simples de usuários (professores) e permite op
 - Visual Studio Code (VS Code)
 
 ### Banco de Dados (SGBD)
-- MySQL 8.x
+- MySQL 
 - Utilizado via XAMPP (Apache + MySQL)
 
 ### Servidor de Aplicação
@@ -22,9 +22,9 @@ O sistema realiza autenticação simples de usuários (professores) e permite op
 - Express.js
 
 ### Linguagens Utilizadas
-- JavaScript (Node.js)
-- HTML5
-- CSS3
+- JavaScript 
+- HTML
+- CSS
 
 ---
 
