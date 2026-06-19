@@ -41,6 +41,12 @@ O sistema realiza autenticação simples de usuários (professores) e permite op
 
 ![Cadastro de Turmas](./docs/cadastro_turmas.png)
 
+---
+
+### Cadastro de Atividades
+
+![Cadastro de Atividades](./docs/cadastro_atividades.png)
+
 ## Como executar 
 
 1. Clonar o repositório
@@ -56,9 +62,3 @@ npx prisma generate
 npx prisma migrate dev
 5. Iniciar servidor backend
 npm run dev
-
----
-
-### Cadastro de Atividades
-
-![Cadastro de Atividades](./docs/cadastro_atividades.png)
