@@ -62,6 +62,6 @@ O sistema realiza autenticação simples de usuários (professores) e permite op
 - npm run dev
 6. Iniciar com Live Server
 - Abra o arquivo index.html
-- Clique com o botão direitoe
-- CAlique em Open with Live Server
+- Clique com o botão direito
+- Clique em Open with Live Server
  
