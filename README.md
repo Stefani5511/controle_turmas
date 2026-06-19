@@ -59,7 +59,7 @@ O sistema realiza autenticação simples de usuários (professores) e permite op
 - npx prisma generate
 - npx prisma migrate dev
 5. Iniciar servidor backend
-npm run dev
+- npm run dev
 6. Iniciar com Live Server
 - Abra o arquivo index.html
 - Clique com o botão direitoe
