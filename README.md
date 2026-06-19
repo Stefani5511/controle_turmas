@@ -52,13 +52,17 @@ O sistema realiza autenticação simples de usuários (professores) e permite op
 1. Clonar o repositório
 2. Instalar dependências do backend
 - cd api
-- npm init -y
 - npm i
 3. Configurar banco de dados
-Configurar arquivo .env
-
+- Configurar arquivo .env
 4. Prisma (configuração do banco)
 - npx prisma generate
 - npx prisma migrate dev
 5. Iniciar servidor backend
 npm run dev
+6. Iniciar com Live Server
+- Abra o arquivo index.html
+- Clique com o botão direito
+Selecione:
+- Open with Live Server
+ 
